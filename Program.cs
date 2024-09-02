@@ -131,6 +131,35 @@
             }
         }
 
+        
+
+        //A duck call is a device that hunters use to [mimic] the sound of ducks, 
+        //so it should NOT inherit from the duck class, as it itself is not a duck
+        class DuckCall
+        {
+            IQuackBehavior quackBehavior;
+
+            public DuckCall()
+            {
+                quackBehavior = new NormalQuack();
+            }
+            public DuckCall(IQuackBehavior qb)
+            {
+                quackBehavior = qb;
+            }
+
+            public void setQuackBehavior(IQuackBehavior qb)
+            {
+                quackBehavior = qb;
+            }
+
+            public void Call()
+            {
+                quackBehavior.Quack();
+            }
+
+        }
+
 
 
 
@@ -160,6 +189,9 @@
             MallardDuck.setQuackBehavior(new Squeak());
             MallardDuck.PerformFly();
             MallardDuck.PerformQuack();
+
+            DuckCall roboticDuckMimicker = new DuckCall(new RoboticQuack());
+            roboticDuckMimicker.Call(); 
         }
     }
 }
