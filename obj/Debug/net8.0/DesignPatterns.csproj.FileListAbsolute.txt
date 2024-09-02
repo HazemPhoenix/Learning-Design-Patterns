@@ -12,3 +12,4 @@ C:\Users\hazem\Desktop\back at it\C#\HelloWorldSln\DesignPatterns\obj\Debug\net8
 C:\Users\hazem\Desktop\back at it\C#\HelloWorldSln\DesignPatterns\obj\Debug\net8.0\DesignPatterns.pdb
 C:\Users\hazem\Desktop\back at it\C#\HelloWorldSln\DesignPatterns\obj\Debug\net8.0\DesignPatterns.genruntimeconfig.cache
 C:\Users\hazem\Desktop\back at it\C#\HelloWorldSln\DesignPatterns\obj\Debug\net8.0\ref\DesignPatterns.dll
+C:\Users\hazem\Desktop\back at it\C#\HelloWorldSln\DesignPatterns\obj\Debug\net8.0\DesignPatterns.sourcelink.json

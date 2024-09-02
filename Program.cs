@@ -81,6 +81,16 @@
                 flyBehavior.Fly();
             }
 
+            public void setQuackBehavior(IQuackBehavior qb)
+            {
+                quackBehavior = qb;
+            }
+
+            public void setFlyBehavior(IFlyBehavior fb)
+            {
+                flyBehavior = fb;
+            }
+
         }
 
 
@@ -143,6 +153,13 @@
 
             RobotDuck.PerformQuack();
             RobotDuck.PerformFly();
+
+            Console.WriteLine("--------------------");
+
+            MallardDuck.setFlyBehavior(new RoboticFly());
+            MallardDuck.setQuackBehavior(new Squeak());
+            MallardDuck.PerformFly();
+            MallardDuck.PerformQuack();
         }
     }
 }
