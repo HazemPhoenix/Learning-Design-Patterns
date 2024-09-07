@@ -19,8 +19,63 @@ namespace DesignPatterns
     
     abstract class CondimentDecorator : Beverage
     {
-        public abstract double cost(); 
+        public abstract string getDescription(); 
 
     }
+
+    class HouseBlend : Beverage
+    {
+        public HouseBlend()
+        {
+            description = "House blend coffee";
+        }
+
+        public override double cost()
+        {
+            return 0.89;
+        }
+    }
+
+    class Espresso : Beverage
+    {
+        public Espresso()
+        {
+            description = "Espresso";
+        }
+
+        public override double cost()
+        {
+            return 1.99;
+        }
+    }
+
+    class DarkRoast : Beverage
+    {
+        public DarkRoast()
+        {
+            description = "Dark roast coffee";
+        }
+
+        public override double cost()
+        {
+            return 0.99;
+        }
+    }
+
+     class Decaf : Beverage
+    {
+        public Decaf()
+        {
+            description = "Decaf coffee";
+        }
+
+        public override double cost()
+        {
+            return 1.05;
+        }
+    }
+
+
+
 
 }
