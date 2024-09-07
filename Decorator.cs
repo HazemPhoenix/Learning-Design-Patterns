@@ -19,7 +19,7 @@ namespace DesignPatterns
     
     abstract class CondimentDecorator : Beverage
     {
-        public abstract string getDescription(); 
+        public new abstract string getDescription(); 
 
     }
 
