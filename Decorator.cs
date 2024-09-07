@@ -75,6 +75,64 @@ namespace DesignPatterns
         }
     }
 
+    class Mocha : CondimentDecorator
+    {
+        Beverage beverage;
+
+        public Mocha(Beverage b)
+        {
+            beverage = b;
+        }
+        public override string getDescription()
+        {
+            return beverage.getDescription() + ", Mocha";
+        }
+
+        public override double cost()
+        {
+            return 0.20 + beverage.cost(); 
+        }
+    }
+
+    class Soy : CondimentDecorator
+    {
+        Beverage beverage;
+
+        public Soy(Beverage b)
+        {
+            beverage = b;
+        }
+
+        public override string getDescription()
+        {
+            return beverage.getDescription() + ", Soy";
+        }
+
+        public override double cost()
+        {
+            return 0.15 + beverage.cost();
+        }
+    }
+
+    class Whip : CondimentDecorator
+    {
+        Beverage beverage;
+        public Whip(Beverage b)
+        {
+            beverage = b;
+        }
+
+        public override string getDescription()
+        {
+            return beverage.getDescription() + ", Whip";
+        }
+
+        public override double cost()
+        {
+            return 0.10 + beverage.cost();
+        }
+    }
+
 
 
 
